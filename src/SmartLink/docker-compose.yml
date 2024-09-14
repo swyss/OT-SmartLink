@@ -1,0 +1,42 @@
+﻿services:
+  app:
+    image: app
+    build:
+      context: .
+      dockerfile: App/Dockerfile
+
+  agentmodbus:
+    image: agentmodbus
+    build:
+      context: .
+      dockerfile: AgentModbus/Dockerfile
+
+  agentmqtt:
+    image: agentmqtt
+    build:
+      context: .
+      dockerfile: AgentMQTT/Dockerfile
+
+  agentopcua:
+    image: agentopcua
+    build:
+      context: .
+      dockerfile: AgentOPCUA/Dockerfile
+
+  servicedatastorage:
+    image: servicedatastorage
+    build:
+      context: .
+      dockerfile: ServiceDataStorage/Dockerfile
+
+  servicemonitoring:
+    image: servicemonitoring
+    build:
+      context: .
+      dockerfile: ServiceMonitoring/Dockerfile
+
+  servicesecurity:
+    image: servicesecurity
+    build:
+      context: .
+      dockerfile: ServiceSecurity/Dockerfile

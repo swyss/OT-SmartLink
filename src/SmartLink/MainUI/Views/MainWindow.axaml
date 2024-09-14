@@ -1,0 +1,41 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:MainUI.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="MainUI.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="MainUI"
+        WindowState="Maximized"
+        WindowStartupLocation="CenterScreen"
+        CanResize="True">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" DockPanel.Dock="Top" Margin="20">
+        <TextBlock Text="{Binding Greeting}" FontSize="24" HorizontalAlignment="Center" Margin="10"/>
+
+        <!-- Display the status of each worker service -->
+        <TextBlock Text="Modbus Worker:" FontWeight="Bold" Margin="5"/>
+        <TextBlock Text="{Binding ModBusWorkerServiceStatus}" Margin="5"/>
+
+        <TextBlock Text="MQTT Worker:" FontWeight="Bold" Margin="5"/>
+        <TextBlock Text="{Binding MQTTWorkerServiceStatus}" Margin="5"/>
+
+        <TextBlock Text="OPC UA Worker:" FontWeight="Bold" Margin="5"/>
+        <TextBlock Text="{Binding OPCUAWorkerServiceStatus}" Margin="5"/>
+
+        <TextBlock Text="Data Storage Worker:" FontWeight="Bold" Margin="5"/>
+        <TextBlock Text="{Binding DataStorageWorkerServiceStatus}" Margin="5"/>
+
+        <TextBlock Text="Monitoring Worker:" FontWeight="Bold" Margin="5"/>
+        <TextBlock Text="{Binding MonitoringWorkerServiceStatus}" Margin="5"/>
+
+        <TextBlock Text="Security Worker:" FontWeight="Bold" Margin="5"/>
+        <TextBlock Text="{Binding SecurityWorkerServiceStatus}" Margin="5"/>
+    </StackPanel>
+</Window>
