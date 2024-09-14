@@ -1,0 +1,13 @@
+D:\repos\projects\OT-SmartLink\src\SmartLink\Core\bin\Debug\net8.0\Core.deps.json
+D:\repos\projects\OT-SmartLink\src\SmartLink\Core\bin\Debug\net8.0\Core.dll
+D:\repos\projects\OT-SmartLink\src\SmartLink\Core\bin\Debug\net8.0\Core.pdb
+D:\repos\projects\OT-SmartLink\src\SmartLink\Core\obj\Debug\net8.0\Core.csproj.AssemblyReference.cache
+D:\repos\projects\OT-SmartLink\src\SmartLink\Core\obj\Debug\net8.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\repos\projects\OT-SmartLink\src\SmartLink\Core\obj\Debug\net8.0\Core.AssemblyInfoInputs.cache
+D:\repos\projects\OT-SmartLink\src\SmartLink\Core\obj\Debug\net8.0\Core.AssemblyInfo.cs
+D:\repos\projects\OT-SmartLink\src\SmartLink\Core\obj\Debug\net8.0\Core.csproj.CoreCompileInputs.cache
+D:\repos\projects\OT-SmartLink\src\SmartLink\Core\obj\Debug\net8.0\Core.sourcelink.json
+D:\repos\projects\OT-SmartLink\src\SmartLink\Core\obj\Debug\net8.0\Core.dll
+D:\repos\projects\OT-SmartLink\src\SmartLink\Core\obj\Debug\net8.0\refint\Core.dll
+D:\repos\projects\OT-SmartLink\src\SmartLink\Core\obj\Debug\net8.0\Core.pdb
+D:\repos\projects\OT-SmartLink\src\SmartLink\Core\obj\Debug\net8.0\ref\Core.dll
