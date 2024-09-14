@@ -135,3 +135,5 @@ D:\repos\projects\OT-SmartLink\src\SmartLink\MainUI\bin\Debug\net8.0\Material.Av
 D:\repos\projects\OT-SmartLink\src\SmartLink\MainUI\bin\Debug\net8.0\Material.Colors.dll
 D:\repos\projects\OT-SmartLink\src\SmartLink\MainUI\bin\Debug\net8.0\Material.Ripple.dll
 D:\repos\projects\OT-SmartLink\src\SmartLink\MainUI\bin\Debug\net8.0\Material.Styles.dll
+D:\repos\projects\OT-SmartLink\src\SmartLink\MainUI\bin\Debug\net8.0\Material.Icons.dll
+D:\repos\projects\OT-SmartLink\src\SmartLink\MainUI\bin\Debug\net8.0\Material.Icons.Avalonia.dll

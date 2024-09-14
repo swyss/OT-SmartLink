@@ -470,6 +470,28 @@
           "lib/net8.0/Material.Styles.dll": {}
         }
       },
+      "Material.Icons/2.1.10": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Material.Icons.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Material.Icons.dll": {}
+        }
+      },
+      "Material.Icons.Avalonia/2.1.10": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "11.0.0-rc1.1",
+          "Material.Icons": "2.1.10"
+        },
+        "compile": {
+          "lib/netstandard2.0/Material.Icons.Avalonia.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Material.Icons.Avalonia.dll": {}
+        }
+      },
       "MicroCom.Runtime/0.11.0": {
         "type": "package",
         "compile": {
@@ -2035,6 +2057,32 @@
         "material.avalonia.nuspec"
       ]
     },
+    "Material.Icons/2.1.10": {
+      "sha512": "nQnLAoVb9lgxWd4OtDADPVzBxERB9UYQd0UWcrqjg0NKFf8oPMuDM2kkxpBKe/Wm6Ayx3C/t3j2+8R1Nscg0Kw==",
+      "type": "package",
+      "path": "material.icons/2.1.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/netstandard2.0/Material.Icons.dll",
+        "material.icons.2.1.10.nupkg.sha512",
+        "material.icons.nuspec"
+      ]
+    },
+    "Material.Icons.Avalonia/2.1.10": {
+      "sha512": "dclTtNbnoLonYK/YI2vgYvOmLeqw08xHxL+ExOSGZEMJKt6k3F6SDmJ41tByOxgXAd+nIDh8V9FqC0FQSEp/CQ==",
+      "type": "package",
+      "path": "material.icons.avalonia/2.1.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/netstandard2.0/Material.Icons.Avalonia.dll",
+        "material.icons.avalonia.2.1.10.nupkg.sha512",
+        "material.icons.avalonia.nuspec"
+      ]
+    },
     "MicroCom.Runtime/0.11.0": {
       "sha512": "MEnrZ3UIiH40hjzMDsxrTyi8dtqB5ziv3iBeeU4bXsL/7NLSal9F1lZKpK+tfBRnUoDSdtcW3KufE4yhATOMCA==",
       "type": "package",
@@ -3423,6 +3471,7 @@
       "CommunityToolkit.Mvvm >= 8.2.1",
       "Core >= 1.0.0",
       "Material.Avalonia >= 3.7.3",
+      "Material.Icons.Avalonia >= 2.1.10",
       "ServiceDataStorage >= 1.0.0",
       "ServiceMonitoring >= 1.0.0",
       "ServiceSecurity >= 1.0.0"
@@ -3519,6 +3568,10 @@
           "Material.Avalonia": {
             "target": "Package",
             "version": "[3.7.3, )"
+          },
+          "Material.Icons.Avalonia": {
+            "target": "Package",
+            "version": "[2.1.10, )"
           }
         },
         "imports": [

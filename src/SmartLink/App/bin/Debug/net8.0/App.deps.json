@@ -361,6 +361,26 @@
           }
         }
       },
+      "Material.Icons/2.1.10": {
+        "runtime": {
+          "lib/netstandard2.0/Material.Icons.dll": {
+            "assemblyVersion": "2.1.10.0",
+            "fileVersion": "2.1.10.0"
+          }
+        }
+      },
+      "Material.Icons.Avalonia/2.1.10": {
+        "dependencies": {
+          "Avalonia": "11.1.0",
+          "Material.Icons": "2.1.10"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Material.Icons.Avalonia.dll": {
+            "assemblyVersion": "2.1.10.0",
+            "fileVersion": "2.1.10.0"
+          }
+        }
+      },
       "MicroCom.Runtime/0.11.0": {
         "runtime": {
           "lib/net5.0/MicroCom.Runtime.dll": {
@@ -910,6 +930,7 @@
           "CommunityToolkit.Mvvm": "8.2.1",
           "Core": "1.0.0",
           "Material.Avalonia": "3.7.3",
+          "Material.Icons.Avalonia": "2.1.10",
           "ServiceDataStorage": "1.0.0",
           "ServiceMonitoring": "1.0.0",
           "ServiceSecurity": "1.0.0"
@@ -1125,6 +1146,20 @@
       "sha512": "sha512-0fQ8m0x2UV/5F1eGhiEtXrHlgSiirzTtRmkaGBkOiBh3X0vUoMmVigh7u0o7+WbYO/g8VU04n3uGHBpXSZG3Sg==",
       "path": "material.avalonia/3.7.3",
       "hashPath": "material.avalonia.3.7.3.nupkg.sha512"
+    },
+    "Material.Icons/2.1.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nQnLAoVb9lgxWd4OtDADPVzBxERB9UYQd0UWcrqjg0NKFf8oPMuDM2kkxpBKe/Wm6Ayx3C/t3j2+8R1Nscg0Kw==",
+      "path": "material.icons/2.1.10",
+      "hashPath": "material.icons.2.1.10.nupkg.sha512"
+    },
+    "Material.Icons.Avalonia/2.1.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dclTtNbnoLonYK/YI2vgYvOmLeqw08xHxL+ExOSGZEMJKt6k3F6SDmJ41tByOxgXAd+nIDh8V9FqC0FQSEp/CQ==",
+      "path": "material.icons.avalonia/2.1.10",
+      "hashPath": "material.icons.avalonia.2.1.10.nupkg.sha512"
     },
     "MicroCom.Runtime/0.11.0": {
       "type": "package",

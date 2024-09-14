@@ -22,5 +22,14 @@ build_property.EnableGeneratedComInterfaceComImportInterop =
 [D:/repos/projects/OT-SmartLink/src/SmartLink/MainUI/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[D:/repos/projects/OT-SmartLink/src/SmartLink/MainUI/Views/AnalysisView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/repos/projects/OT-SmartLink/src/SmartLink/MainUI/Views/ConfigurationView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/repos/projects/OT-SmartLink/src/SmartLink/MainUI/Views/DashboardView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [D:/repos/projects/OT-SmartLink/src/SmartLink/MainUI/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

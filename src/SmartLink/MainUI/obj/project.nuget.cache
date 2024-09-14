@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "HeezZOrOWiU=",
+  "dgSpecHash": "LM0tI9166FA=",
   "success": true,
   "projectFilePath": "D:\\repos\\projects\\OT-SmartLink\\src\\SmartLink\\MainUI\\MainUI.csproj",
   "expectedPackageFiles": [
@@ -27,6 +27,8 @@
     "C:\\Users\\uller\\.nuget\\packages\\harfbuzzsharp.nativeassets.webassembly\\7.3.0.2\\harfbuzzsharp.nativeassets.webassembly.7.3.0.2.nupkg.sha512",
     "C:\\Users\\uller\\.nuget\\packages\\harfbuzzsharp.nativeassets.win32\\7.3.0.2\\harfbuzzsharp.nativeassets.win32.7.3.0.2.nupkg.sha512",
     "C:\\Users\\uller\\.nuget\\packages\\material.avalonia\\3.7.3\\material.avalonia.3.7.3.nupkg.sha512",
+    "C:\\Users\\uller\\.nuget\\packages\\material.icons\\2.1.10\\material.icons.2.1.10.nupkg.sha512",
+    "C:\\Users\\uller\\.nuget\\packages\\material.icons.avalonia\\2.1.10\\material.icons.avalonia.2.1.10.nupkg.sha512",
     "C:\\Users\\uller\\.nuget\\packages\\microcom.runtime\\0.11.0\\microcom.runtime.0.11.0.nupkg.sha512",
     "C:\\Users\\uller\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "C:\\Users\\uller\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
