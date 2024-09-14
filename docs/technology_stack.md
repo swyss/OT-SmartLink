@@ -11,6 +11,7 @@
 - **RDF & JSON-LD**: For data modeling and exchange in a structured format.
 - **RAMI4.0**: Industry 4.0 reference architecture.
 - **OWL & SPARQL**: Ontology language and query language for semantic data.
+- **AutomationML (AML)**: XML-based standard for data exchange in industrial automation.
 
 ## Databases
 - **InfluxDB**: Time-series database for storing real-time sensor data.
@@ -19,3 +20,5 @@
 ## Monitoring & Logging
 - **Serilog**: Logging framework for C# applications.
 - **Prometheus**: Monitoring tool for performance and system health.
+
+[Return to README](../README.md)
