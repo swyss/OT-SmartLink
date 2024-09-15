@@ -1,8 +1,6 @@
 using AgentModbus;
 using AgentMQTT;
 using AgentOPCUA;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
@@ -13,11 +11,15 @@ using Microsoft.Extensions.Logging;
 using ServiceDataStorage;
 using ServiceMonitoring;
 using ServiceSecurity;
+using Core.Repositories;
+using Core.Logging;
 
 namespace MainUI;
 
 public partial class App : Application
 {
+    public static ServiceBroker ServiceBrokerInstance { get; private set; } = null!;
+
     public override void Initialize()
     {
         AvaloniaXamlLoader.Load(this);
@@ -29,19 +31,26 @@ public partial class App : Application
         {
             var loggerFactory = LoggerFactory.Create(builder => builder.AddConsole());
 
-            // Example ServiceBroker setup (adapt as needed)
-            var serviceBroker = new ServiceBroker(
-                new ModbusWorker(loggerFactory.CreateLogger<ModbusWorker>()),
-                new MQTTWorker(loggerFactory.CreateLogger<MQTTWorker>()),
-                new OPCUAWorker(loggerFactory.CreateLogger<OPCUAWorker>()),
-                new DataStorageWorker(loggerFactory.CreateLogger<DataStorageWorker>()),
-                new MonitoringWorker(loggerFactory.CreateLogger<MonitoringWorker>()),
-                new SecurityWorker(loggerFactory.CreateLogger<SecurityWorker>())
+            // Initialize ServiceConfigRepository and InfluxDBLogger
+            var configRepository =
+                new ServiceConfigRepository(
+                    "Host=localhost;Database=service_config;Username=postgres;Password=yourpassword");
+            var influxLogger =
+                new InfluxDBLogger("http://localhost:8086", "your-influxdb-token", "my-bucket", "my-org");
+
+            // Create ServiceBroker with all worker services and necessary dependencies
+            ServiceBrokerInstance = new ServiceBroker(
+                new ModbusWorker(loggerFactory.CreateLogger<ModbusWorker>(), configRepository, influxLogger),
+                new MQTTWorker(loggerFactory.CreateLogger<MQTTWorker>(), configRepository, influxLogger),
+                new OPCUAWorker(loggerFactory.CreateLogger<OPCUAWorker>(), configRepository, influxLogger),
+                new DataStorageWorker(loggerFactory.CreateLogger<DataStorageWorker>(), configRepository, influxLogger),
+                new MonitoringWorker(loggerFactory.CreateLogger<MonitoringWorker>(), configRepository, influxLogger),
+                new SecurityWorker(loggerFactory.CreateLogger<SecurityWorker>(), configRepository, influxLogger)
             );
 
             desktop.MainWindow = new MainWindow
             {
-                DataContext = new MainWindowViewModel(serviceBroker)
+                DataContext = new MainWindowViewModel(ServiceBrokerInstance)
             };
         }
 

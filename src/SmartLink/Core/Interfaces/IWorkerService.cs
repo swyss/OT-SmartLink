@@ -4,8 +4,8 @@ public interface IWorkerService
 {
     string GetServiceStateAsString();
     ServiceState GetServiceState();
-    void StartService();
-    void StopService();
+    Task StartService(CancellationToken cancellationToken);
+    Task StopService(CancellationToken cancellationToken);
 }
 
 public enum ServiceState

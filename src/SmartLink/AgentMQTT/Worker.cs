@@ -1,34 +1,29 @@
+using Microsoft.Extensions.Logging;
+using System.Threading;
+using System.Threading.Tasks;
+using Core.Logging;
+using Core.Repositories;
 using Core.Services;
 
 namespace AgentMQTT;
 
-public class MQTTWorker : WorkerBase, IHostedService
+public class MQTTWorker : WorkerBase
 {
-    // Constructor with only ILogger as a parameter
-    public MQTTWorker(ILogger<MQTTWorker> logger) 
-        : base(logger) // Pass the logger to the base class (WorkerBase)
+    public MQTTWorker(ILogger<MQTTWorker> logger, ServiceConfigRepository configRepository, InfluxDBLogger influxLogger)
+        : base(logger, configRepository, influxLogger)
     {
     }
 
-    // StartAsync implementation for IHostedService
-    public Task StartAsync(CancellationToken cancellationToken)
+    protected override async Task DoWorkAsync(CancellationToken stoppingToken)
     {
-        _logger.LogInformation("MQTTWorker starting..."); // Use the protected _logger field
-        StartService(); // Call the base class StartService method
+        while (!stoppingToken.IsCancellationRequested)
+        {
+            _logger.LogInformation("MQTTWorker is running.");
 
-        // Add MQTT-specific startup logic here
+            // Example: Log status or perform some periodic work
+            await LogServiceStatusToInfluxDB("Running");
 
-        return Task.CompletedTask;
-    }
-
-    // StopAsync implementation for IHostedService
-    public Task StopAsync(CancellationToken cancellationToken)
-    {
-        _logger.LogInformation("MQTTWorker stopping..."); // Use the protected _logger field
-        StopService(); // Call the base class StopService method
-
-        // Add MQTT-specific shutdown logic here
-
-        return Task.CompletedTask;
+            await Task.Delay(1000, stoppingToken); // Simulate some work
+        }
     }
 }

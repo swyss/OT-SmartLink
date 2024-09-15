@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AgentModbus")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4e0a7c849fd6b520ba7e86afb364c17f60989533")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92828b4eeb0c8c7c14e132e2c6576c1f212e10d4")]
 [assembly: System.Reflection.AssemblyProductAttribute("AgentModbus")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AgentModbus")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -24,8 +24,9 @@ public static class Program
         host.Run();
     }
 
-    private static IHostBuilder CreateHostBuilder(string[] args) =>
-        Host.CreateDefaultBuilder(args)
+    private static IHostBuilder CreateHostBuilder(string[] args)
+    {
+        return Host.CreateDefaultBuilder(args)
             .ConfigureServices((hostContext, services) =>
             {
                 services.AddHostedService<ModbusWorker>(); // Register worker services
@@ -35,4 +36,5 @@ public static class Program
                 services.AddHostedService<MonitoringWorker>();
                 services.AddHostedService<SecurityWorker>();
             });
+    }
 }

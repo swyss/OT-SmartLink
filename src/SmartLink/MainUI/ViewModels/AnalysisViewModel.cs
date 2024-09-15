@@ -5,10 +5,10 @@ using Core.Broker;
 
 namespace MainUI.ViewModels;
 
-public class AnalysisViewModel: ViewModelBase
+public class AnalysisViewModel : ViewModelBase
 {
     // Example data that can be analyzed
-    public ObservableCollection<string> AnalysisResults { get; } = new ObservableCollection<string>();
+    public ObservableCollection<string> AnalysisResults { get; } = new();
 
     public ICommand RefreshAnalysisCommand { get; }
 

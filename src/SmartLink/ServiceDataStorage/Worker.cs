@@ -1,25 +1,30 @@
+using Microsoft.Extensions.Logging;
+using System.Threading;
+using System.Threading.Tasks;
+using Core.Logging;
+using Core.Repositories;
 using Core.Services;
 
 namespace ServiceDataStorage;
 
-public class DataStorageWorker : WorkerBase, IHostedService
+public class DataStorageWorker : WorkerBase
 {
-    public DataStorageWorker(ILogger<DataStorageWorker> logger) 
-        : base(logger) 
+    public DataStorageWorker(ILogger<DataStorageWorker> logger, ServiceConfigRepository configRepository,
+        InfluxDBLogger influxLogger)
+        : base(logger, configRepository, influxLogger)
     {
     }
 
-    public Task StartAsync(CancellationToken cancellationToken)
+    protected override async Task DoWorkAsync(CancellationToken stoppingToken)
     {
-        _logger.LogInformation("DataStorageWorker starting...");
-        StartService(); 
-        return Task.CompletedTask;
-    }
+        while (!stoppingToken.IsCancellationRequested)
+        {
+            _logger.LogInformation("DataStorageWorker is running.");
 
-    public Task StopAsync(CancellationToken cancellationToken)
-    {
-        _logger.LogInformation("DataStorageWorker stopping...");
-        StopService();
-        return Task.CompletedTask;
+            // Example: Log status or perform some periodic work
+            await LogServiceStatusToInfluxDB("Running");
+
+            await Task.Delay(1000, stoppingToken); // Simulate some work
+        }
     }
 }

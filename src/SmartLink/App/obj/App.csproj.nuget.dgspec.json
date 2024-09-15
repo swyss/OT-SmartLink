@@ -271,7 +271,7 @@
           "dependencies": {
             "Avalonia": {
               "target": "Package",
-              "version": "[11.1.0, )"
+              "version": "[11.1.3, )"
             },
             "Microsoft.Extensions.Logging": {
               "target": "Package",
@@ -337,6 +337,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "InfluxDB.Client": {
+              "target": "Package",
+              "version": "[4.17.0, )"
+            },
             "Microsoft.Extensions.Hosting.Abstractions": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -344,6 +348,10 @@
             "Microsoft.Extensions.Logging.Abstractions": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[8.0.3, )"
             }
           },
           "imports": [
@@ -429,27 +437,27 @@
           "dependencies": {
             "Avalonia": {
               "target": "Package",
-              "version": "[11.1.0, )"
+              "version": "[11.1.3, )"
             },
             "Avalonia.Desktop": {
               "target": "Package",
-              "version": "[11.1.0, )"
+              "version": "[11.1.3, )"
             },
             "Avalonia.Diagnostics": {
               "target": "Package",
-              "version": "[11.1.0, )"
+              "version": "[11.1.3, )"
             },
             "Avalonia.Fonts.Inter": {
               "target": "Package",
-              "version": "[11.1.0, )"
+              "version": "[11.1.3, )"
             },
             "Avalonia.Themes.Fluent": {
               "target": "Package",
-              "version": "[11.1.0, )"
+              "version": "[11.1.3, )"
             },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
-              "version": "[8.2.1, )"
+              "version": "[8.3.1, )"
             },
             "Material.Avalonia": {
               "target": "Package",

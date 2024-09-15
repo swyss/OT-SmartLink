@@ -15,7 +15,7 @@
     <Design.DataContext>
         <!-- This only sets the DataContext for the previewer in an IDE,
              to set the actual DataContext for runtime, set the DataContext property in code (look at App.xaml.cs) -->
-        <vm:MainWindowViewModel/>
+        <vm:MainWindowViewModel />
     </Design.DataContext>
 
     <!-- Use DockPanel to layout the menu, content, and status bar -->
@@ -23,19 +23,19 @@
         <!-- Header: Menu Bar -->
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="File">
-                <MenuItem Header="Open Project" Command="{Binding OpenProjectCommand}"/>
-                <MenuItem Header="Save Project" Command="{Binding SaveProjectCommand}"/>
-                <MenuItem Header="Exit" Command="{Binding ExitCommand}"/>
+                <MenuItem Header="Open Project" Command="{Binding OpenProjectCommand}" />
+                <MenuItem Header="Save Project" Command="{Binding SaveProjectCommand}" />
+                <MenuItem Header="Exit" Command="{Binding ExitCommand}" />
             </MenuItem>
             <MenuItem Header="View">
-                <MenuItem Header="Dashboard" Command="{Binding NavigateDashboardCommand}"/>
-                <MenuItem Header="Analysis" Command="{Binding NavigateAnalysisCommand}"/>
-                <MenuItem Header="Configuration" Command="{Binding NavigateConfigurationCommand}"/>
+                <MenuItem Header="Dashboard" Command="{Binding NavigateDashboardCommand}" />
+                <MenuItem Header="Analysis" Command="{Binding NavigateAnalysisCommand}" />
+                <MenuItem Header="Configuration" Command="{Binding NavigateConfigurationCommand}" />
             </MenuItem>
         </Menu>
 
         <!-- Content Area: Dynamically display the selected view -->
-        <ContentControl Content="{Binding CurrentView}" DockPanel.Dock="Top" Margin="10"/>
+        <ContentControl Content="{Binding CurrentView}" DockPanel.Dock="Top" Margin="10" />
 
 
     </DockPanel>

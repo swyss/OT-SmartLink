@@ -4,65 +4,53 @@ namespace Core.Broker;
 
 public class ServiceBroker
 {
-    public IWorkerService ModbusWorker { get; }
-    public IWorkerService MQTTWorker { get; }
-    public IWorkerService OPCUAWorker { get; }
-    public IWorkerService DataStorageWorker { get; }
-    public IWorkerService MonitoringWorker { get; }
-    public IWorkerService SecurityWorker { get; }
+    // Private fields for internal use
+    private readonly IWorkerService _modbusWorker;
+    private readonly IWorkerService _mqttWorker;
+    private readonly IWorkerService _opcuaWorker;
+    private readonly IWorkerService _dataStorageWorker;
+    private readonly IWorkerService _monitoringWorker;
+    private readonly IWorkerService _securityWorker;
 
-    // Constructor using IWorkerService interface
-    public ServiceBroker(
-        IWorkerService modbusWorker, 
-        IWorkerService mqttWorker, 
-        IWorkerService opcuaWorker,
-        IWorkerService dataStorageWorker,
-        IWorkerService monitoringWorker,
-        IWorkerService securityWorker)
+    // Public properties to expose worker services
+    public IWorkerService ModbusWorker => _modbusWorker;
+    public IWorkerService MQTTWorker => _mqttWorker;
+    public IWorkerService OPCUAWorker => _opcuaWorker;
+    public IWorkerService DataStorageWorker => _dataStorageWorker;
+    public IWorkerService MonitoringWorker => _monitoringWorker;
+    public IWorkerService SecurityWorker => _securityWorker;
+
+    // Constructor to initialize the ServiceBroker with worker services
+    public ServiceBroker(IWorkerService modbusWorker, IWorkerService mqttWorker, IWorkerService opcuaWorker,
+        IWorkerService dataStorageWorker, IWorkerService monitoringWorker, IWorkerService securityWorker)
     {
-        ModbusWorker = modbusWorker;
-        MQTTWorker = mqttWorker;
-        OPCUAWorker = opcuaWorker;
-        DataStorageWorker = dataStorageWorker;
-        MonitoringWorker = monitoringWorker;
-        SecurityWorker = securityWorker;
+        _modbusWorker = modbusWorker;
+        _mqttWorker = mqttWorker;
+        _opcuaWorker = opcuaWorker;
+        _dataStorageWorker = dataStorageWorker;
+        _monitoringWorker = monitoringWorker;
+        _securityWorker = securityWorker;
     }
 
-    // Method to start all services
+    // Start all services
     public void StartAllServices()
     {
-        ModbusWorker.StartService();
-        MQTTWorker.StartService();
-        OPCUAWorker.StartService();
-        DataStorageWorker.StartService();
-        MonitoringWorker.StartService();
-        SecurityWorker.StartService();
+        _modbusWorker.StartService(default);
+        _mqttWorker.StartService(default);
+        _opcuaWorker.StartService(default);
+        _dataStorageWorker.StartService(default);
+        _monitoringWorker.StartService(default);
+        _securityWorker.StartService(default);
     }
 
-    // Method to stop all services
+    // Stop all services
     public void StopAllServices()
     {
-        ModbusWorker.StopService();
-        MQTTWorker.StopService();
-        OPCUAWorker.StopService();
-        DataStorageWorker.StopService();
-        MonitoringWorker.StopService();
-        SecurityWorker.StopService();
-    }
-
-    // Method to get the status of all services
-    public string GetAllServicesStatus()
-    {
-        var statuses = new[]
-        {
-            $"ModbusWorker: {ModbusWorker.GetServiceStateAsString()}",
-            $"MQTTWorker: {MQTTWorker.GetServiceStateAsString()}",
-            $"OPCUAWorker: {OPCUAWorker.GetServiceStateAsString()}",
-            $"DataStorageWorker: {DataStorageWorker.GetServiceStateAsString()}",
-            $"MonitoringWorker: {MonitoringWorker.GetServiceStateAsString()}",
-            $"SecurityWorker: {SecurityWorker.GetServiceStateAsString()}"
-        };
-
-        return string.Join("\n", statuses);
+        _modbusWorker.StopService(default);
+        _mqttWorker.StopService(default);
+        _opcuaWorker.StopService(default);
+        _dataStorageWorker.StopService(default);
+        _monitoringWorker.StopService(default);
+        _securityWorker.StopService(default);
     }
 }

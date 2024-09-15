@@ -1,28 +1,26 @@
-using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System.Threading;
 using System.Threading.Tasks;
+using Core.Logging;
+using Core.Repositories;
 using Core.Services;
 
 namespace AgentModbus;
-public class ModbusWorker : WorkerBase, IHostedService // Ensure ModbusWorker implements IHostedService
+
+public class ModbusWorker : WorkerBase
 {
-    public ModbusWorker(ILogger<ModbusWorker> logger) 
-        : base(logger)
+    public ModbusWorker(ILogger<ModbusWorker> logger, ServiceConfigRepository configRepository,
+        InfluxDBLogger influxLogger)
+        : base(logger, configRepository, influxLogger)
     {
     }
 
-    // StartAsync is required for IHostedService
-    public Task StartAsync(CancellationToken cancellationToken)
+    protected override async Task DoWorkAsync(CancellationToken stoppingToken)
     {
-        StartService(); // Call the base class StartService method
-        return Task.CompletedTask;
-    }
-
-    // StopAsync is required for IHostedService
-    public Task StopAsync(CancellationToken cancellationToken)
-    {
-        StopService(); // Call the base class StopService method
-        return Task.CompletedTask;
+        while (!stoppingToken.IsCancellationRequested)
+        {
+            _logger.LogInformation("ModbusWorker is running.");
+            await Task.Delay(1000, stoppingToken); // Simulate work
+        }
     }
 }
