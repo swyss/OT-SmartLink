@@ -1,23 +1,12 @@
 ﻿using InfluxDB.Client;
-using InfluxDB.Client.Writes;
-using System;
-using System.Threading.Tasks;
 using InfluxDB.Client.Api.Domain;
+using InfluxDB.Client.Writes;
 
 namespace Core.Logging;
 
-public class InfluxDBLogger
+public class InfluxDBLogger(string url, string token, string bucket, string org)
 {
-    private readonly InfluxDBClient _client;
-    private readonly string _bucket;
-    private readonly string _org;
-
-    public InfluxDBLogger(string url, string token, string bucket, string org)
-    {
-        _client = InfluxDBClientFactory.Create(url, token);
-        _bucket = bucket;
-        _org = org;
-    }
+    private readonly InfluxDBClient _client = new(url, token);
 
     // Log service status to InfluxDB
     public async Task LogServiceStatus(string serviceName, string status, DateTime timestamp)
@@ -29,6 +18,6 @@ public class InfluxDBLogger
             .Field("status", status)
             .Timestamp(timestamp, WritePrecision.Ms);
 
-        await writeApi.WritePointAsync(point, _bucket, _org);
+        await writeApi.WritePointAsync(point, bucket, org);
     }
 }

@@ -1,6 +1,3 @@
-using Microsoft.Extensions.Logging;
-using System.Threading;
-using System.Threading.Tasks;
 using Core.Logging;
 using Core.Repositories;
 using Core.Services;

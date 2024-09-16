@@ -1,20 +1,17 @@
 ﻿using Core.Interfaces;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Threading;
-using System.Threading.Tasks;
 using Core.Logging;
 using Core.Repositories;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 
 namespace Core.Services;
 
 public abstract class WorkerBase : BackgroundService, IWorkerService
 {
-    protected readonly ILogger<WorkerBase> _logger;
-    protected ServiceState _currentState;
     private readonly ServiceConfigRepository _configRepository;
     private readonly InfluxDBLogger _influxLogger;
+    protected readonly ILogger<WorkerBase> _logger;
+    protected ServiceState _currentState;
 
     protected WorkerBase(ILogger<WorkerBase> logger, ServiceConfigRepository configRepository,
         InfluxDBLogger influxLogger)

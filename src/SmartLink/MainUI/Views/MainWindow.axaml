@@ -3,40 +3,28 @@
         xmlns:vm="using:MainUI.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="1000" d:DesignHeight="700"
+        xmlns:layout="clr-namespace:MainUI.Views.Layouts"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="MainUI.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
-        Title="SmartLink"
-        Icon="/Assets/smartlink-logo.ico"
-        WindowState="Maximized"
-        WindowStartupLocation="CenterScreen"
-        CanResize="True">
+        Icon="/Assets/avalonia-logo.ico"
+        Title="MainUI">
 
     <Design.DataContext>
         <!-- This only sets the DataContext for the previewer in an IDE,
-             to set the actual DataContext for runtime, set the DataContext property in code (look at App.xaml.cs) -->
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
         <vm:MainWindowViewModel />
     </Design.DataContext>
 
-    <!-- Use DockPanel to layout the menu, content, and status bar -->
-    <DockPanel>
-        <!-- Header: Menu Bar -->
-        <Menu DockPanel.Dock="Top">
-            <MenuItem Header="File">
-                <MenuItem Header="Open Project" Command="{Binding OpenProjectCommand}" />
-                <MenuItem Header="Save Project" Command="{Binding SaveProjectCommand}" />
-                <MenuItem Header="Exit" Command="{Binding ExitCommand}" />
-            </MenuItem>
-            <MenuItem Header="View">
-                <MenuItem Header="Dashboard" Command="{Binding NavigateDashboardCommand}" />
-                <MenuItem Header="Analysis" Command="{Binding NavigateAnalysisCommand}" />
-                <MenuItem Header="Configuration" Command="{Binding NavigateConfigurationCommand}" />
-            </MenuItem>
-        </Menu>
 
-        <!-- Content Area: Dynamically display the selected view -->
-        <ContentControl Content="{Binding CurrentView}" DockPanel.Dock="Top" Margin="10" />
+    <DockPanel LastChildFill="True">
+        <layout:LayoutHeader DockPanel.Dock="Top" Height="38" />
 
+        <Border Height="25" Background="SkyBlue" BorderBrush="Black" BorderThickness="1" DockPanel.Dock="Top">
+            <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Border>
+        <layout:LayoutFooter DockPanel.Dock="Bottom" Height="25" />
+        <layout:LayoutContent />
 
     </DockPanel>
 </Window>

@@ -1,15 +1,13 @@
 ﻿using AgentModbus;
 using AgentMQTT;
 using AgentOPCUA;
-using Avalonia;
-using Avalonia.Controls;
 using Core.Broker;
+using Core.Logging;
+using Core.Repositories;
 using Microsoft.Extensions.Logging;
 using ServiceDataStorage;
 using ServiceMonitoring;
 using ServiceSecurity;
-using Core.Repositories;
-using Core.Logging;
 
 namespace App;
 
@@ -51,13 +49,6 @@ public class ApplicationStarter
         serviceBroker.StartAllServices();
 
         // Start Avalonia UI
-        BuildAvaloniaApp().StartWithClassicDesktopLifetime(Array.Empty<string>(), ShutdownMode.OnMainWindowClose);
-    }
-
-    public static AppBuilder BuildAvaloniaApp()
-    {
-        return AppBuilder.Configure<MainUI.App>()
-            .UsePlatformDetect()
-            .LogToTrace();
+        MainUI.Program.Main(new string[0]);
     }
 }

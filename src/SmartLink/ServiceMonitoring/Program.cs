@@ -1,4 +1,3 @@
-using Core.Services;
 using ServiceMonitoring;
 
 var builder = Host.CreateApplicationBuilder(args);
