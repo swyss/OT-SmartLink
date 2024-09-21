@@ -25,4 +25,8 @@
         <PackageReference Include="Material.Icons.Avalonia" Version="2.1.10"/>
         <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.1"/>
     </ItemGroup>
+
+    <ItemGroup>
+      <UpToDateCheckInput Remove="Assets\View\MainStyles.axaml" />
+    </ItemGroup>
 </Project>

@@ -149,3 +149,9 @@ D:\repos\projects\OT-SmartLink\src\SmartLink\App\obj\Debug\net8.0\refint\App.dll
 D:\repos\projects\OT-SmartLink\src\SmartLink\App\obj\Debug\net8.0\App.pdb
 D:\repos\projects\OT-SmartLink\src\SmartLink\App\obj\Debug\net8.0\App.genruntimeconfig.cache
 D:\repos\projects\OT-SmartLink\src\SmartLink\App\obj\Debug\net8.0\ref\App.dll
+D:\repos\projects\OT-SmartLink\src\SmartLink\App\bin\Debug\net8.0\Material.Avalonia.dll
+D:\repos\projects\OT-SmartLink\src\SmartLink\App\bin\Debug\net8.0\Material.Colors.dll
+D:\repos\projects\OT-SmartLink\src\SmartLink\App\bin\Debug\net8.0\Material.Ripple.dll
+D:\repos\projects\OT-SmartLink\src\SmartLink\App\bin\Debug\net8.0\Material.Styles.dll
+D:\repos\projects\OT-SmartLink\src\SmartLink\App\bin\Debug\net8.0\Material.Icons.dll
+D:\repos\projects\OT-SmartLink\src\SmartLink\App\bin\Debug\net8.0\Material.Icons.Avalonia.dll

@@ -3,11 +3,18 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
+        <entry key="AvaloniaApplication1/Views/MainWindow.axaml" value="AvaloniaApplication1/AvaloniaApplication1.csproj" />
         <entry key="MainUI/App.axaml" value="App/App.csproj" />
+        <entry key="MainUI/Assets/View/MainStyles.axaml" value="App/App.csproj" />
         <entry key="MainUI/Views/AnalysisView.axaml" value="App/App.csproj" />
         <entry key="MainUI/Views/ConfigurationView.axaml" value="App/App.csproj" />
         <entry key="MainUI/Views/DashboardView.axaml" value="App/App.csproj" />
-        <entry key="MainUI/Views/MainWindow.axaml" value="App/App.csproj" />
+        <entry key="MainUI/Views/Layout/Header.axaml" value="App/App.csproj" />
+        <entry key="MainUI/Views/LayoutResources.axaml" value="App/App.csproj" />
+        <entry key="MainUI/Views/Layouts/LayoutContent.axaml" value="App/App.csproj" />
+        <entry key="MainUI/Views/Layouts/LayoutFooter.axaml" value="App/App.csproj" />
+        <entry key="MainUI/Views/Layouts/LayoutHeader.axaml" value="App/App.csproj" />
+        <entry key="MainUI/Views/MainWindow.axaml" value="MainUI/MainUI.csproj" />
       </map>
     </option>
   </component>
