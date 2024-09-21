@@ -4,24 +4,20 @@ using Core.Services;
 
 namespace ServiceMonitoring;
 
-public class MonitoringWorker : WorkerBase
+public class MonitoringWorker :  WorkerBase<MonitoringWorker>
 {
-    public MonitoringWorker(ILogger<MonitoringWorker> logger, ServiceConfigRepository configRepository,
-        InfluxDBLogger influxLogger)
-        : base(logger, configRepository, influxLogger)
+public MonitoringWorker(ILogger<MonitoringWorker> logger, IServiceConfigRepository configRepository)
+    : base(logger, configRepository)
+{
+}
+
+protected override async Task DoWorkAsync(CancellationToken stoppingToken)
+{
+    while (!stoppingToken.IsCancellationRequested)
     {
+        _logger.LogInformation("SecurityWorker is running.");
+
+        await Task.Delay(1000, stoppingToken); // Simulate some work
     }
-
-    protected override async Task DoWorkAsync(CancellationToken stoppingToken)
-    {
-        while (!stoppingToken.IsCancellationRequested)
-        {
-            _logger.LogInformation("MonitoringWorker is running.");
-
-            // Example: Log status or perform some periodic work
-            await LogServiceStatusToInfluxDB("Running");
-
-            await Task.Delay(1000, stoppingToken); // Simulate some work
-        }
-    }
+}
 }

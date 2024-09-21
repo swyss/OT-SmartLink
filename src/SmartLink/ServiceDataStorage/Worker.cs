@@ -4,11 +4,10 @@ using Core.Services;
 
 namespace ServiceDataStorage;
 
-public class DataStorageWorker : WorkerBase
+public class DataStorageWorker :  WorkerBase<DataStorageWorker>
 {
-    public DataStorageWorker(ILogger<DataStorageWorker> logger, ServiceConfigRepository configRepository,
-        InfluxDBLogger influxLogger)
-        : base(logger, configRepository, influxLogger)
+    public DataStorageWorker(ILogger<DataStorageWorker> logger, IServiceConfigRepository configRepository)
+        : base(logger, configRepository)
     {
     }
 
@@ -16,10 +15,7 @@ public class DataStorageWorker : WorkerBase
     {
         while (!stoppingToken.IsCancellationRequested)
         {
-            _logger.LogInformation("DataStorageWorker is running.");
-
-            // Example: Log status or perform some periodic work
-            await LogServiceStatusToInfluxDB("Running");
+            _logger.LogInformation("SecurityWorker is running.");
 
             await Task.Delay(1000, stoppingToken); // Simulate some work
         }

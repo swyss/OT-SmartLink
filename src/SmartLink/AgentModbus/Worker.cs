@@ -4,11 +4,10 @@ using Core.Services;
 
 namespace AgentModbus;
 
-public class ModbusWorker : WorkerBase
+public class ModbusWorker : WorkerBase<ModbusWorker>
 {
-    public ModbusWorker(ILogger<ModbusWorker> logger, ServiceConfigRepository configRepository,
-        InfluxDBLogger influxLogger)
-        : base(logger, configRepository, influxLogger)
+    public ModbusWorker(ILogger<ModbusWorker> logger, IServiceConfigRepository configRepository)
+        : base(logger, configRepository)
     {
     }
 
@@ -16,8 +15,9 @@ public class ModbusWorker : WorkerBase
     {
         while (!stoppingToken.IsCancellationRequested)
         {
-            _logger.LogInformation("ModbusWorker is running.");
-            await Task.Delay(1000, stoppingToken); // Simulate work
+            _logger.LogInformation("SecurityWorker is running.");
+
+            await Task.Delay(1000, stoppingToken); // Simulate some work
         }
     }
 }

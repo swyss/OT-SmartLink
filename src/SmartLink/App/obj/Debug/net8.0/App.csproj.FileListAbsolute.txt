@@ -155,3 +155,4 @@ D:\repos\projects\OT-SmartLink\src\SmartLink\App\bin\Debug\net8.0\Material.Rippl
 D:\repos\projects\OT-SmartLink\src\SmartLink\App\bin\Debug\net8.0\Material.Styles.dll
 D:\repos\projects\OT-SmartLink\src\SmartLink\App\bin\Debug\net8.0\Material.Icons.dll
 D:\repos\projects\OT-SmartLink\src\SmartLink\App\bin\Debug\net8.0\Material.Icons.Avalonia.dll
+D:\repos\projects\OT-SmartLink\src\SmartLink\App\bin\Debug\net8.0\Spectre.Console.dll

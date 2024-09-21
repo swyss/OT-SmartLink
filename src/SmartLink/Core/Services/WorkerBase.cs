@@ -6,19 +6,16 @@ using Microsoft.Extensions.Logging;
 
 namespace Core.Services;
 
-public abstract class WorkerBase : BackgroundService, IWorkerService
+public abstract class WorkerBase<TWorker> : BackgroundService, IWorkerService
 {
-    private readonly ServiceConfigRepository _configRepository;
-    private readonly InfluxDBLogger _influxLogger;
-    protected readonly ILogger<WorkerBase> _logger;
+    private readonly IServiceConfigRepository _configRepository;
+    protected readonly ILogger<TWorker> _logger;
     protected ServiceState _currentState;
 
-    protected WorkerBase(ILogger<WorkerBase> logger, ServiceConfigRepository configRepository,
-        InfluxDBLogger influxLogger)
+    protected WorkerBase(ILogger<TWorker> logger, IServiceConfigRepository configRepository)
     {
         _logger = logger;
         _configRepository = configRepository;
-        _influxLogger = influxLogger;
         _currentState = ServiceState.Stopped;
     }
 
@@ -37,7 +34,6 @@ public abstract class WorkerBase : BackgroundService, IWorkerService
         _currentState = ServiceState.Running;
         _logger.LogInformation("Service started.");
         await SaveServiceConfigAsync("Status", _currentState.ToString());
-        await LogServiceStatusToInfluxDB("Running");
     }
 
     public virtual async Task StopService(CancellationToken cancellationToken)
@@ -45,7 +41,6 @@ public abstract class WorkerBase : BackgroundService, IWorkerService
         _currentState = ServiceState.Stopped;
         _logger.LogInformation("Service stopped.");
         await SaveServiceConfigAsync("Status", _currentState.ToString());
-        await LogServiceStatusToInfluxDB("Stopped");
     }
 
     // Save service configuration to PostgreSQL
@@ -53,13 +48,6 @@ public abstract class WorkerBase : BackgroundService, IWorkerService
     {
         await _configRepository.SaveConfigAsync(GetType().Name, key, value);
         _logger.LogInformation($"Saved configuration for {GetType().Name}: {key} = {value}");
-    }
-
-    // Log service status to InfluxDB
-    protected async Task LogServiceStatusToInfluxDB(string status)
-    {
-        await _influxLogger.LogServiceStatus(GetType().Name, status, DateTime.UtcNow);
-        _logger.LogInformation($"Logged status for {GetType().Name} to InfluxDB: {status}");
     }
 
     // Automatically restart the service if it fails
@@ -76,6 +64,7 @@ public abstract class WorkerBase : BackgroundService, IWorkerService
             catch (Exception ex)
             {
                 retryCount++;
+                _currentState = ServiceState.Error;
                 _logger.LogError(ex, $"{GetType().Name} encountered an error. Retry {retryCount}/{maxRetries}.");
                 if (retryCount >= maxRetries)
                 {
