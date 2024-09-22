@@ -1,13 +1,11 @@
-using Core.Logging;
-using Core.Repositories;
 using Core.Services;
 
 namespace AgentModbus;
 
 public class ModbusWorker : WorkerBase<ModbusWorker>
 {
-    public ModbusWorker(ILogger<ModbusWorker> logger, IServiceConfigRepository configRepository)
-        : base(logger, configRepository)
+    public ModbusWorker(ILogger<ModbusWorker> logger)
+        : base(logger)
     {
     }
 

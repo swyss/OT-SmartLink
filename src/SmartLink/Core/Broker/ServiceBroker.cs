@@ -3,86 +3,68 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Threading.Tasks;
 
-namespace Core.Broker
+namespace Core.Broker;
+
+public class ServiceBroker(
+    IWorkerService modbusWorker,
+    IWorkerService mqttWorker,
+    IWorkerService opcuaWorker,
+    IWorkerService dataStorageWorker,
+    IWorkerService monitoringWorker,
+    IWorkerService securityWorker,
+    ILogger<ServiceBroker> logger)
 {
-    public class ServiceBroker
+    // Private readonly fields for worker services
+
+    // Constructor to initialize the ServiceBroker with worker services
+
+    // Start all services
+    public async Task StartAllServicesAsync()
     {
-        // Private readonly fields for worker services
-        private readonly IWorkerService _modbusWorker;
-        private readonly IWorkerService _mqttWorker;
-        private readonly IWorkerService _opcuaWorker;
-        private readonly IWorkerService _dataStorageWorker;
-        private readonly IWorkerService _monitoringWorker;
-        private readonly IWorkerService _securityWorker;
-        private readonly ILogger<ServiceBroker> _logger;
+        logger.LogInformation("Starting all services...");
 
-        // Constructor to initialize the ServiceBroker with worker services
-        public ServiceBroker(
-            IWorkerService modbusWorker,
-            IWorkerService mqttWorker,
-            IWorkerService opcuaWorker,
-            IWorkerService dataStorageWorker,
-            IWorkerService monitoringWorker,
-            IWorkerService securityWorker,
-            ILogger<ServiceBroker> logger)
+        try
         {
-            _modbusWorker = modbusWorker;
-            _mqttWorker = mqttWorker;
-            _opcuaWorker = opcuaWorker;
-            _dataStorageWorker = dataStorageWorker;
-            _monitoringWorker = monitoringWorker;
-            _securityWorker = securityWorker;
-            _logger = logger;
+            await Task.WhenAll(
+                modbusWorker.StartService(default),
+                mqttWorker.StartService(default),
+                opcuaWorker.StartService(default),
+                dataStorageWorker.StartService(default),
+                monitoringWorker.StartService(default),
+                securityWorker.StartService(default)
+            );
+
+            logger.LogInformation("All services started successfully.");
         }
-
-        // Start all services
-        public async Task StartAllServicesAsync()
+        catch (Exception ex)
         {
-            _logger.LogInformation("Starting all services...");
-
-            try
-            {
-                await Task.WhenAll(
-                    _modbusWorker.StartService(default),
-                    _mqttWorker.StartService(default),
-                    _opcuaWorker.StartService(default),
-                    _dataStorageWorker.StartService(default),
-                    _monitoringWorker.StartService(default),
-                    _securityWorker.StartService(default)
-                );
-
-                _logger.LogInformation("All services started successfully.");
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error while starting services.");
-                throw;
-            }
+            logger.LogError(ex, "Error while starting services.");
+            throw;
         }
+    }
 
-        // Stop all services
-        public async Task StopAllServicesAsync()
+    // Stop all services
+    public async Task StopAllServicesAsync()
+    {
+        logger.LogInformation("Stopping all services...");
+
+        try
         {
-            _logger.LogInformation("Stopping all services...");
+            await Task.WhenAll(
+                modbusWorker.StopService(default),
+                mqttWorker.StopService(default),
+                opcuaWorker.StopService(default),
+                dataStorageWorker.StopService(default),
+                monitoringWorker.StopService(default),
+                securityWorker.StopService(default)
+            );
 
-            try
-            {
-                await Task.WhenAll(
-                    _modbusWorker.StopService(default),
-                    _mqttWorker.StopService(default),
-                    _opcuaWorker.StopService(default),
-                    _dataStorageWorker.StopService(default),
-                    _monitoringWorker.StopService(default),
-                    _securityWorker.StopService(default)
-                );
-
-                _logger.LogInformation("All services stopped successfully.");
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error while stopping services.");
-                throw;
-            }
+            logger.LogInformation("All services stopped successfully.");
+        }
+        catch (Exception ex)
+        {
+            logger.LogError(ex, "Error while stopping services.");
+            throw;
         }
     }
 }

@@ -1,42 +1,49 @@
 ﻿services:
   app:
-    image: app
+    image: smartlink_app
+    container_name: SmartLink-App
     build:
       context: .
       dockerfile: App/Dockerfile
 
   agentmodbus:
-    image: agentmodbus
+    image: smartlink_agentmodbus
+    container_name: SmartLink-Agent-modbus
     build:
       context: .
       dockerfile: AgentModbus/Dockerfile
 
   agentmqtt:
-    image: agentmqtt
+    image: smartlink_agentmqtt
+    container_name: SmartLink-Agent-mqtt
     build:
       context: .
       dockerfile: AgentMQTT/Dockerfile
 
   agentopcua:
-    image: agentopcua
+    image: smartlink_agentopcua
+    container_name: SmartLink-Agent-opcua
     build:
       context: .
       dockerfile: AgentOPCUA/Dockerfile
 
   servicedatastorage:
-    image: servicedatastorage
+    image: smartlink_servicedatastorage
+    container_name: SmartLink-Service-Datastorage
     build:
       context: .
       dockerfile: ServiceDataStorage/Dockerfile
 
   servicemonitoring:
-    image: servicemonitoring
+    image: smartlink_servicemonitoring
+    container_name: SmartLink-Service-Monitoring
     build:
       context: .
       dockerfile: ServiceMonitoring/Dockerfile
 
   servicesecurity:
-    image: servicesecurity
+    image: smartlink_servicesecurity
+    container_name: SmartLink-Service-Security
     build:
       context: .
       dockerfile: ServiceSecurity/Dockerfile

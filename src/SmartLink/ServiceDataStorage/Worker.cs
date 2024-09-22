@@ -1,13 +1,11 @@
-using Core.Logging;
-using Core.Repositories;
 using Core.Services;
 
 namespace ServiceDataStorage;
 
-public class DataStorageWorker :  WorkerBase<DataStorageWorker>
+public class DataStorageWorker : WorkerBase<DataStorageWorker>
 {
-    public DataStorageWorker(ILogger<DataStorageWorker> logger, IServiceConfigRepository configRepository)
-        : base(logger, configRepository)
+    public DataStorageWorker(ILogger<DataStorageWorker> logger)
+        : base(logger)
     {
     }
 

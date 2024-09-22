@@ -1,6 +1,4 @@
 ﻿using Core.Interfaces;
-using Core.Logging;
-using Core.Repositories;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
@@ -8,14 +6,13 @@ namespace Core.Services;
 
 public abstract class WorkerBase<TWorker> : BackgroundService, IWorkerService
 {
-    private readonly IServiceConfigRepository _configRepository;
+
     protected readonly ILogger<TWorker> _logger;
     protected ServiceState _currentState;
 
-    protected WorkerBase(ILogger<TWorker> logger, IServiceConfigRepository configRepository)
+    protected WorkerBase(ILogger<TWorker> logger)
     {
         _logger = logger;
-        _configRepository = configRepository;
         _currentState = ServiceState.Stopped;
     }
 
@@ -46,7 +43,6 @@ public abstract class WorkerBase<TWorker> : BackgroundService, IWorkerService
     // Save service configuration to PostgreSQL
     protected async Task SaveServiceConfigAsync(string key, string value)
     {
-        await _configRepository.SaveConfigAsync(GetType().Name, key, value);
         _logger.LogInformation($"Saved configuration for {GetType().Name}: {key} = {value}");
     }
 

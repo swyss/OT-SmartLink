@@ -27,6 +27,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <UpToDateCheckInput Remove="Assets\View\MainStyles.axaml" />
+        <UpToDateCheckInput Remove="Assets\View\MainStyles.axaml"/>
     </ItemGroup>
 </Project>

@@ -1,11 +1,9 @@
-using Core.Logging;
-using Core.Repositories;
 using Core.Services;
 
 namespace AgentOPCUA;
 
-public class OpcuaWorker(ILogger<OpcuaWorker> logger, IServiceConfigRepository configRepository)
-    : WorkerBase<OpcuaWorker>(logger, configRepository)
+public class OpcuaWorker(ILogger<OpcuaWorker> logger)
+    : WorkerBase<OpcuaWorker>(logger)
 {
     protected override async Task DoWorkAsync(CancellationToken stoppingToken)
     {

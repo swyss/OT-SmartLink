@@ -1,11 +1,9 @@
-using Core.Logging;
-using Core.Repositories;
 using Core.Services;
 
 namespace AgentMQTT;
 
-public class MqttWorker(ILogger<MqttWorker> logger, IServiceConfigRepository configRepository)
-    : WorkerBase<MqttWorker>(logger, configRepository)
+public class MqttWorker(ILogger<MqttWorker> logger)
+    : WorkerBase<MqttWorker>(logger)
 {
     protected override async Task DoWorkAsync(CancellationToken stoppingToken)
     {

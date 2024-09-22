@@ -1,5 +1,3 @@
-using Core.Logging;
-using Core.Repositories;
 using Core.Services;
 using Microsoft.Extensions.Logging;
 
@@ -7,8 +5,8 @@ namespace ServiceSecurity;
 
 public class SecurityWorker : WorkerBase<SecurityWorker>
 {
-    public SecurityWorker(ILogger<SecurityWorker> logger, IServiceConfigRepository configRepository)
-        : base(logger, configRepository)
+    public SecurityWorker(ILogger<SecurityWorker> logger)
+        : base(logger)
     {
     }
 
