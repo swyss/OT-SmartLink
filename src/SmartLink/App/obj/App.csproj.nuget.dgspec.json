@@ -50,6 +50,10 @@
             "Microsoft.Extensions.Hosting": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "NModbus": {
+              "target": "Package",
+              "version": "[3.0.81, )"
             }
           },
           "imports": [
@@ -115,6 +119,18 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "MQTTnet": {
+              "target": "Package",
+              "version": "[4.3.7.1207, )"
+            },
+            "MQTTnet.AspNetCore": {
+              "target": "Package",
+              "version": "[4.3.7.1207, )"
+            },
+            "MQTTnet.Extensions.ManagedClient": {
+              "target": "Package",
+              "version": "[4.3.7.1207, )"
+            },
             "Microsoft.Extensions.Hosting": {
               "target": "Package",
               "version": "[8.0.0, )"

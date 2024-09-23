@@ -16,179 +16,132 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa051c27-d20e-4d0f-972e-89b2a73d52aa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Data/DbContext/PostgresDbContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/Models/SensorData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/Repositories/InfluxDbRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/Repositories/PostgresRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/Services/InfluxDbService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SmartLink/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SmartLink/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgentMQTT/Worker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AgentMQTT/Worker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgentMQTT/bin/Debug/net8.0/AgentMQTT.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AgentMQTT/bin/Debug/net8.0/AgentMQTT.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgentMQTT/bin/Debug/net8.0/AgentMQTT.exe" beforeDir="false" afterPath="$PROJECT_DIR$/AgentMQTT/bin/Debug/net8.0/AgentMQTT.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgentMQTT/bin/Debug/net8.0/AgentMQTT.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AgentMQTT/bin/Debug/net8.0/AgentMQTT.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgentMQTT/bin/Debug/net8.0/Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AgentMQTT/bin/Debug/net8.0/Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgentMQTT/bin/Debug/net8.0/Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AgentMQTT/bin/Debug/net8.0/Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgentMQTT/AgentMQTT.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AgentMQTT/AgentMQTT.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgentMQTT/obj/AgentMQTT.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/AgentMQTT/obj/AgentMQTT.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AgentMQTT/obj/Debug/net8.0/AgentMQTT.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AgentMQTT/obj/Debug/net8.0/AgentMQTT.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AgentMQTT/obj/Debug/net8.0/AgentMQTT.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AgentMQTT/obj/Debug/net8.0/AgentMQTT.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgentMQTT/obj/Debug/net8.0/AgentMQTT.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AgentMQTT/obj/Debug/net8.0/AgentMQTT.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AgentMQTT/obj/Debug/net8.0/AgentMQTT.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AgentMQTT/obj/Debug/net8.0/AgentMQTT.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgentMQTT/obj/Debug/net8.0/AgentMQTT.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AgentMQTT/obj/Debug/net8.0/AgentMQTT.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgentMQTT/obj/Debug/net8.0/AgentMQTT.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AgentMQTT/obj/Debug/net8.0/AgentMQTT.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgentMQTT/obj/Debug/net8.0/AgentMQTT.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/AgentMQTT/obj/Debug/net8.0/AgentMQTT.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgentMQTT/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/AgentMQTT/obj/Debug/net8.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgentMQTT/obj/Debug/net8.0/ref/AgentMQTT.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AgentMQTT/obj/Debug/net8.0/ref/AgentMQTT.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgentMQTT/obj/Debug/net8.0/refint/AgentMQTT.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AgentMQTT/obj/Debug/net8.0/refint/AgentMQTT.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgentMQTT/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/AgentMQTT/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgentMQTT/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AgentMQTT/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgentMQTT/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/AgentMQTT/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AgentMQTT/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/AgentMQTT/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgentMQTT/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/AgentMQTT/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgentModbus/AgentModbus.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AgentModbus/AgentModbus.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AgentModbus/Worker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AgentModbus/Worker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgentModbus/bin/Debug/net8.0/AgentModbus.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AgentModbus/bin/Debug/net8.0/AgentModbus.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgentModbus/bin/Debug/net8.0/AgentModbus.exe" beforeDir="false" afterPath="$PROJECT_DIR$/AgentModbus/bin/Debug/net8.0/AgentModbus.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgentModbus/bin/Debug/net8.0/AgentModbus.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AgentModbus/bin/Debug/net8.0/AgentModbus.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgentModbus/bin/Debug/net8.0/Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AgentModbus/bin/Debug/net8.0/Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgentModbus/bin/Debug/net8.0/Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AgentModbus/bin/Debug/net8.0/Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgentModbus/obj/AgentModbus.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/AgentModbus/obj/AgentModbus.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AgentModbus/obj/Debug/net8.0/AgentModbus.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AgentModbus/obj/Debug/net8.0/AgentModbus.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AgentModbus/obj/Debug/net8.0/AgentModbus.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AgentModbus/obj/Debug/net8.0/AgentModbus.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgentModbus/obj/Debug/net8.0/AgentModbus.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AgentModbus/obj/Debug/net8.0/AgentModbus.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AgentModbus/obj/Debug/net8.0/AgentModbus.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AgentModbus/obj/Debug/net8.0/AgentModbus.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgentModbus/obj/Debug/net8.0/AgentModbus.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AgentModbus/obj/Debug/net8.0/AgentModbus.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgentModbus/obj/Debug/net8.0/AgentModbus.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AgentModbus/obj/Debug/net8.0/AgentModbus.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgentModbus/obj/Debug/net8.0/AgentModbus.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/AgentModbus/obj/Debug/net8.0/AgentModbus.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgentModbus/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/AgentModbus/obj/Debug/net8.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgentModbus/obj/Debug/net8.0/ref/AgentModbus.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AgentModbus/obj/Debug/net8.0/ref/AgentModbus.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgentModbus/obj/Debug/net8.0/refint/AgentModbus.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AgentModbus/obj/Debug/net8.0/refint/AgentModbus.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgentModbus/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/AgentModbus/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgentModbus/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AgentModbus/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgentModbus/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/AgentModbus/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AgentModbus/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/AgentModbus/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgentOPCUA/Worker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AgentOPCUA/Worker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgentOPCUA/bin/Debug/net8.0/AgentOPCUA.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AgentOPCUA/bin/Debug/net8.0/AgentOPCUA.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgentOPCUA/bin/Debug/net8.0/AgentOPCUA.exe" beforeDir="false" afterPath="$PROJECT_DIR$/AgentOPCUA/bin/Debug/net8.0/AgentOPCUA.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgentOPCUA/bin/Debug/net8.0/AgentOPCUA.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AgentOPCUA/bin/Debug/net8.0/AgentOPCUA.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgentOPCUA/bin/Debug/net8.0/Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AgentOPCUA/bin/Debug/net8.0/Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgentOPCUA/bin/Debug/net8.0/Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AgentOPCUA/bin/Debug/net8.0/Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgentModbus/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/AgentModbus/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AgentOPCUA/obj/Debug/net8.0/AgentOPCUA.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AgentOPCUA/obj/Debug/net8.0/AgentOPCUA.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AgentOPCUA/obj/Debug/net8.0/AgentOPCUA.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AgentOPCUA/obj/Debug/net8.0/AgentOPCUA.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgentOPCUA/obj/Debug/net8.0/AgentOPCUA.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AgentOPCUA/obj/Debug/net8.0/AgentOPCUA.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgentOPCUA/obj/Debug/net8.0/AgentOPCUA.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AgentOPCUA/obj/Debug/net8.0/AgentOPCUA.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgentOPCUA/obj/Debug/net8.0/AgentOPCUA.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AgentOPCUA/obj/Debug/net8.0/AgentOPCUA.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgentOPCUA/obj/Debug/net8.0/AgentOPCUA.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/AgentOPCUA/obj/Debug/net8.0/AgentOPCUA.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgentOPCUA/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/AgentOPCUA/obj/Debug/net8.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgentOPCUA/obj/Debug/net8.0/ref/AgentOPCUA.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AgentOPCUA/obj/Debug/net8.0/ref/AgentOPCUA.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AgentOPCUA/obj/Debug/net8.0/refint/AgentOPCUA.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AgentOPCUA/obj/Debug/net8.0/refint/AgentOPCUA.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AgentOPCUA/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/AgentOPCUA/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/App.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/App/App.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/ApplicationStarter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App/ApplicationStarter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/App/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/bin/Debug/net8.0/AgentMQTT.dll" beforeDir="false" afterPath="$PROJECT_DIR$/App/bin/Debug/net8.0/AgentMQTT.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/bin/Debug/net8.0/AgentMQTT.exe" beforeDir="false" afterPath="$PROJECT_DIR$/App/bin/Debug/net8.0/AgentMQTT.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/bin/Debug/net8.0/AgentMQTT.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/App/bin/Debug/net8.0/AgentMQTT.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/bin/Debug/net8.0/AgentModbus.dll" beforeDir="false" afterPath="$PROJECT_DIR$/App/bin/Debug/net8.0/AgentModbus.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/bin/Debug/net8.0/AgentModbus.exe" beforeDir="false" afterPath="$PROJECT_DIR$/App/bin/Debug/net8.0/AgentModbus.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/bin/Debug/net8.0/AgentModbus.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/App/bin/Debug/net8.0/AgentModbus.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/bin/Debug/net8.0/AgentOPCUA.dll" beforeDir="false" afterPath="$PROJECT_DIR$/App/bin/Debug/net8.0/AgentOPCUA.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/bin/Debug/net8.0/AgentOPCUA.exe" beforeDir="false" afterPath="$PROJECT_DIR$/App/bin/Debug/net8.0/AgentOPCUA.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/bin/Debug/net8.0/AgentOPCUA.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/App/bin/Debug/net8.0/AgentOPCUA.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/bin/Debug/net8.0/App.dll" beforeDir="false" afterPath="$PROJECT_DIR$/App/bin/Debug/net8.0/App.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/bin/Debug/net8.0/App.exe" beforeDir="false" afterPath="$PROJECT_DIR$/App/bin/Debug/net8.0/App.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/bin/Debug/net8.0/App.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/App/bin/Debug/net8.0/App.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/bin/Debug/net8.0/Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/App/bin/Debug/net8.0/Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/bin/Debug/net8.0/Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/App/bin/Debug/net8.0/Core.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/bin/Debug/net8.0/MainUI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/App/bin/Debug/net8.0/MainUI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/bin/Debug/net8.0/MainUI.exe" beforeDir="false" afterPath="$PROJECT_DIR$/App/bin/Debug/net8.0/MainUI.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/bin/Debug/net8.0/MainUI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/App/bin/Debug/net8.0/MainUI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/bin/Debug/net8.0/ServiceDataStorage.dll" beforeDir="false" afterPath="$PROJECT_DIR$/App/bin/Debug/net8.0/ServiceDataStorage.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/bin/Debug/net8.0/ServiceDataStorage.exe" beforeDir="false" afterPath="$PROJECT_DIR$/App/bin/Debug/net8.0/ServiceDataStorage.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/bin/Debug/net8.0/ServiceDataStorage.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/App/bin/Debug/net8.0/ServiceDataStorage.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/bin/Debug/net8.0/ServiceMonitoring.dll" beforeDir="false" afterPath="$PROJECT_DIR$/App/bin/Debug/net8.0/ServiceMonitoring.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/bin/Debug/net8.0/ServiceMonitoring.exe" beforeDir="false" afterPath="$PROJECT_DIR$/App/bin/Debug/net8.0/ServiceMonitoring.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/bin/Debug/net8.0/ServiceMonitoring.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/App/bin/Debug/net8.0/ServiceMonitoring.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/bin/Debug/net8.0/ServiceSecurity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/App/bin/Debug/net8.0/ServiceSecurity.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/bin/Debug/net8.0/ServiceSecurity.exe" beforeDir="false" afterPath="$PROJECT_DIR$/App/bin/Debug/net8.0/ServiceSecurity.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/bin/Debug/net8.0/ServiceSecurity.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/App/bin/Debug/net8.0/ServiceSecurity.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgentOPCUA/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/AgentOPCUA/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/obj/App.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/App/obj/App.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/obj/Debug/net8.0/App.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/App/obj/Debug/net8.0/App.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/obj/Debug/net8.0/App.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/App/obj/Debug/net8.0/App.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/obj/Debug/net8.0/App.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/App/obj/Debug/net8.0/App.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/obj/Debug/net8.0/App.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/App/obj/Debug/net8.0/App.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/obj/Debug/net8.0/App.dll" beforeDir="false" afterPath="$PROJECT_DIR$/App/obj/Debug/net8.0/App.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/obj/Debug/net8.0/App.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/App/obj/Debug/net8.0/App.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/obj/Debug/net8.0/App.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/App/obj/Debug/net8.0/App.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/App/obj/Debug/net8.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/obj/Debug/net8.0/ref/App.dll" beforeDir="false" afterPath="$PROJECT_DIR$/App/obj/Debug/net8.0/ref/App.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/obj/Debug/net8.0/refint/App.dll" beforeDir="false" afterPath="$PROJECT_DIR$/App/obj/Debug/net8.0/refint/App.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/App/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/App/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/App/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Broker/ServiceBroker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Broker/ServiceBroker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Logging/InfluxDBLogger.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Repositories/DatabaseSettings.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Repositories/IServiceConfigRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Repositories/ServiceConfigRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Services/WorkerBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Services/WorkerBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Core/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/bin/Debug/net8.0/Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Core/bin/Debug/net8.0/Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/bin/Debug/net8.0/Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Core/bin/Debug/net8.0/Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/App/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/ViewLocator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/ViewModels/MainWindowViewModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/ViewModels/ViewModelBase.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/Views/MainWindow.axaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/Views/MainWindow.axaml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/Avalonia.Base.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/Avalonia.Controls.ColorPicker.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/Avalonia.Controls.DataGrid.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/Avalonia.Controls.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/Avalonia.DesignerSupport.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/Avalonia.Desktop.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/Avalonia.Diagnostics.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/Avalonia.Dialogs.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/Avalonia.Fonts.Inter.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/Avalonia.FreeDesktop.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/Avalonia.Markup.Xaml.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/Avalonia.Markup.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/Avalonia.Metal.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/Avalonia.MicroCom.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/Avalonia.Native.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/Avalonia.OpenGL.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/Avalonia.Remote.Protocol.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/Avalonia.Skia.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/Avalonia.Themes.Fluent.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/Avalonia.Themes.Simple.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/Avalonia.Vulkan.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/Avalonia.Win32.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/Avalonia.X11.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/Avalonia.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/AvaloniaApplication1.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/AvaloniaApplication1.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/AvaloniaApplication1.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/AvaloniaApplication1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/AvaloniaApplication1.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/CommunityToolkit.Mvvm.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/HarfBuzzSharp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/MicroCom.Runtime.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/SkiaSharp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/System.IO.Pipelines.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/Tmds.DBus.Protocol.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/runtimes/linux-arm/native/libHarfBuzzSharp.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/runtimes/linux-arm/native/libSkiaSharp.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/runtimes/linux-arm64/native/libHarfBuzzSharp.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/runtimes/linux-arm64/native/libSkiaSharp.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/runtimes/linux-musl-x64/native/libHarfBuzzSharp.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/runtimes/linux-musl-x64/native/libSkiaSharp.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/runtimes/linux-x64/native/libHarfBuzzSharp.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/runtimes/linux-x64/native/libSkiaSharp.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/runtimes/osx/native/libAvaloniaNative.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/runtimes/osx/native/libHarfBuzzSharp.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/runtimes/osx/native/libSkiaSharp.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/runtimes/win-arm64/native/av_libglesv2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/runtimes/win-arm64/native/libHarfBuzzSharp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/runtimes/win-arm64/native/libSkiaSharp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/runtimes/win-x64/native/av_libglesv2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/runtimes/win-x64/native/libHarfBuzzSharp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/runtimes/win-x64/native/libSkiaSharp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/runtimes/win-x86/native/av_libglesv2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/runtimes/win-x86/native/libHarfBuzzSharp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvaloniaApplication1/bin/Debug/net8.0/runtimes/win-x86/native/libSkiaSharp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Interfaces/IWorkerService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Templates/WorkerServices/IWorkerService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Services/WorkerBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Templates/WorkerServices/WorkerBase.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net8.0/Core.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/Core.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net8.0/Core.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/Core.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net8.0/Core.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/Core.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net8.0/Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net8.0/Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/Core.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net8.0/Core.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/Core.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net8.0/ref/Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/ref/Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/obj/Debug/net8.0/refint/Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/Debug/net8.0/refint/Core.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainUI/MainUI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MainUI/MainUI.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainUI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MainUI/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainUI/bin/Debug/net8.0/MainUI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MainUI/bin/Debug/net8.0/MainUI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainUI/bin/Debug/net8.0/MainUI.exe" beforeDir="false" afterPath="$PROJECT_DIR$/MainUI/bin/Debug/net8.0/MainUI.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainUI/bin/Debug/net8.0/MainUI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MainUI/bin/Debug/net8.0/MainUI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainUI/obj/Debug/net8.0/Avalonia/MainUI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MainUI/obj/Debug/net8.0/Avalonia/MainUI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainUI/obj/Debug/net8.0/Avalonia/MainUI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MainUI/obj/Debug/net8.0/Avalonia/MainUI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Core/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainUI/obj/Debug/net8.0/MainUI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MainUI/obj/Debug/net8.0/MainUI.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainUI/obj/Debug/net8.0/MainUI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MainUI/obj/Debug/net8.0/MainUI.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainUI/obj/Debug/net8.0/MainUI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MainUI/obj/Debug/net8.0/MainUI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainUI/obj/Debug/net8.0/MainUI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MainUI/obj/Debug/net8.0/MainUI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainUI/obj/Debug/net8.0/MainUI.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/MainUI/obj/Debug/net8.0/MainUI.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainUI/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/MainUI/obj/Debug/net8.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainUI/obj/Debug/net8.0/ref/MainUI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MainUI/obj/Debug/net8.0/ref/MainUI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainUI/obj/Debug/net8.0/refint/Avalonia/MainUI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MainUI/obj/Debug/net8.0/refint/Avalonia/MainUI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainUI/obj/Debug/net8.0/refint/MainUI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MainUI/obj/Debug/net8.0/refint/MainUI.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainUI/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/MainUI/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceDataStorage/Worker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceDataStorage/Worker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceDataStorage/bin/Debug/net8.0/Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceDataStorage/bin/Debug/net8.0/Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceDataStorage/bin/Debug/net8.0/Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceDataStorage/bin/Debug/net8.0/Core.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceDataStorage/bin/Debug/net8.0/ServiceDataStorage.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceDataStorage/bin/Debug/net8.0/ServiceDataStorage.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceDataStorage/bin/Debug/net8.0/ServiceDataStorage.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceDataStorage/bin/Debug/net8.0/ServiceDataStorage.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceDataStorage/bin/Debug/net8.0/ServiceDataStorage.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceDataStorage/bin/Debug/net8.0/ServiceDataStorage.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainUI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/MainUI/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServiceDataStorage/obj/Debug/net8.0/ServiceDataStorage.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceDataStorage/obj/Debug/net8.0/ServiceDataStorage.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServiceDataStorage/obj/Debug/net8.0/ServiceDataStorage.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceDataStorage/obj/Debug/net8.0/ServiceDataStorage.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceDataStorage/obj/Debug/net8.0/ServiceDataStorage.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceDataStorage/obj/Debug/net8.0/ServiceDataStorage.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceDataStorage/obj/Debug/net8.0/ServiceDataStorage.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceDataStorage/obj/Debug/net8.0/ServiceDataStorage.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceDataStorage/obj/Debug/net8.0/ServiceDataStorage.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceDataStorage/obj/Debug/net8.0/ServiceDataStorage.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceDataStorage/obj/Debug/net8.0/ServiceDataStorage.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceDataStorage/obj/Debug/net8.0/ServiceDataStorage.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceDataStorage/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceDataStorage/obj/Debug/net8.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceDataStorage/obj/Debug/net8.0/ref/ServiceDataStorage.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceDataStorage/obj/Debug/net8.0/ref/ServiceDataStorage.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceDataStorage/obj/Debug/net8.0/refint/ServiceDataStorage.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceDataStorage/obj/Debug/net8.0/refint/ServiceDataStorage.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServiceDataStorage/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceDataStorage/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceMonitoring/Worker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceMonitoring/Worker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceMonitoring/bin/Debug/net8.0/Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceMonitoring/bin/Debug/net8.0/Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceMonitoring/bin/Debug/net8.0/Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceMonitoring/bin/Debug/net8.0/Core.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceMonitoring/bin/Debug/net8.0/ServiceMonitoring.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceMonitoring/bin/Debug/net8.0/ServiceMonitoring.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceMonitoring/bin/Debug/net8.0/ServiceMonitoring.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceMonitoring/bin/Debug/net8.0/ServiceMonitoring.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceMonitoring/bin/Debug/net8.0/ServiceMonitoring.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceMonitoring/bin/Debug/net8.0/ServiceMonitoring.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServiceDataStorage/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceDataStorage/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServiceMonitoring/obj/Debug/net8.0/ServiceMonitoring.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceMonitoring/obj/Debug/net8.0/ServiceMonitoring.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServiceMonitoring/obj/Debug/net8.0/ServiceMonitoring.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceMonitoring/obj/Debug/net8.0/ServiceMonitoring.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceMonitoring/obj/Debug/net8.0/ServiceMonitoring.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceMonitoring/obj/Debug/net8.0/ServiceMonitoring.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceMonitoring/obj/Debug/net8.0/ServiceMonitoring.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceMonitoring/obj/Debug/net8.0/ServiceMonitoring.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceMonitoring/obj/Debug/net8.0/ServiceMonitoring.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceMonitoring/obj/Debug/net8.0/ServiceMonitoring.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceMonitoring/obj/Debug/net8.0/ServiceMonitoring.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceMonitoring/obj/Debug/net8.0/ServiceMonitoring.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceMonitoring/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceMonitoring/obj/Debug/net8.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceMonitoring/obj/Debug/net8.0/ref/ServiceMonitoring.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceMonitoring/obj/Debug/net8.0/ref/ServiceMonitoring.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceMonitoring/obj/Debug/net8.0/refint/ServiceMonitoring.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceMonitoring/obj/Debug/net8.0/refint/ServiceMonitoring.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServiceMonitoring/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceMonitoring/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceSecurity/Worker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceSecurity/Worker.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceSecurity/bin/Debug/net8.0/Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceSecurity/bin/Debug/net8.0/Core.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceSecurity/bin/Debug/net8.0/Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceSecurity/bin/Debug/net8.0/Core.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceSecurity/bin/Debug/net8.0/ServiceSecurity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceSecurity/bin/Debug/net8.0/ServiceSecurity.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceSecurity/bin/Debug/net8.0/ServiceSecurity.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceSecurity/bin/Debug/net8.0/ServiceSecurity.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceSecurity/bin/Debug/net8.0/ServiceSecurity.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceSecurity/bin/Debug/net8.0/ServiceSecurity.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServiceMonitoring/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceMonitoring/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServiceSecurity/obj/Debug/net8.0/ServiceSecurity.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceSecurity/obj/Debug/net8.0/ServiceSecurity.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServiceSecurity/obj/Debug/net8.0/ServiceSecurity.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceSecurity/obj/Debug/net8.0/ServiceSecurity.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceSecurity/obj/Debug/net8.0/ServiceSecurity.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceSecurity/obj/Debug/net8.0/ServiceSecurity.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceSecurity/obj/Debug/net8.0/ServiceSecurity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceSecurity/obj/Debug/net8.0/ServiceSecurity.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceSecurity/obj/Debug/net8.0/ServiceSecurity.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceSecurity/obj/Debug/net8.0/ServiceSecurity.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceSecurity/obj/Debug/net8.0/ServiceSecurity.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceSecurity/obj/Debug/net8.0/ServiceSecurity.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceSecurity/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceSecurity/obj/Debug/net8.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceSecurity/obj/Debug/net8.0/ref/ServiceSecurity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceSecurity/obj/Debug/net8.0/ref/ServiceSecurity.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ServiceSecurity/obj/Debug/net8.0/refint/ServiceSecurity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceSecurity/obj/Debug/net8.0/refint/ServiceSecurity.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ServiceSecurity/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceSecurity/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ServiceSecurity/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ServiceSecurity/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartLink.sln" beforeDir="false" afterPath="$PROJECT_DIR$/SmartLink.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,10 +176,10 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c1e716bd1cf8971bdcc7ff83ad6f78ffc716735fddf5c93283243b543ab86/DynamicResourceExtension.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AvaloniaApplication1/Views/MainWindow.axaml" root0="SKIP_HIGHLIGHTING" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -259,6 +212,11 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.sourceCode.C#",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "Markdown"
+    ]
   }
 }]]></component>
   <component name="RunManager" selected=".NET Project.App">
@@ -527,7 +485,8 @@
       <workItem from="1726413384661" duration="68000" />
       <workItem from="1726413477683" duration="13221000" />
       <workItem from="1726769922788" duration="2444000" />
-      <workItem from="1727024175046" duration="3644000" />
+      <workItem from="1727024175046" duration="5302000" />
+      <workItem from="1727103243061" duration="5988000" />
     </task>
     <task id="LOCAL-00001" summary="feat (project): add structure and projects">
       <option name="closed" value="true" />
@@ -569,7 +528,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726938193911</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix (project): remove databses">
+      <option name="closed" value="true" />
+      <created>1727035772041</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1727035772041</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -585,6 +552,7 @@
     <MESSAGE value="feat (app): add service-functions" />
     <MESSAGE value="feat (layout): add header/footer/content" />
     <MESSAGE value="feat (start): add starter" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat (start): add starter" />
+    <MESSAGE value="fix (project): remove databses" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix (project): remove databses" />
   </component>
 </project>
