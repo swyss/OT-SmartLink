@@ -1,0 +1,135 @@
+# This is a generated file. Not intended for manual editing.
+services:
+  agentmodbus:
+    build:
+      context: "D:\\repos\\projects\\OT-SmartLink\\src\\SmartLink"
+      dockerfile: "AgentModbus/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/AgentModbus.dll"
+    environment:
+      DOTNET_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "smartlink_agentmodbus:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\uller\\.nuget\\packages:/home/app/.nuget/packages"
+    - "D:\\repos\\projects\\OT-SmartLink\\src\\SmartLink\\AgentModbus:/app:rw"
+    - "D:\\repos\\projects\\OT-SmartLink\\src\\SmartLink:/src:rw"
+    working_dir: "/app"
+  agentmqtt:
+    build:
+      context: "D:\\repos\\projects\\OT-SmartLink\\src\\SmartLink"
+      dockerfile: "AgentMQTT/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/AgentMQTT.dll"
+    environment:
+      DOTNET_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "smartlink_agentmqtt:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\uller\\.nuget\\packages:/home/app/.nuget/packages"
+    - "D:\\repos\\projects\\OT-SmartLink\\src\\SmartLink\\AgentMQTT:/app:rw"
+    - "D:\\repos\\projects\\OT-SmartLink\\src\\SmartLink:/src:rw"
+    working_dir: "/app"
+  agentopcua:
+    build:
+      context: "D:\\repos\\projects\\OT-SmartLink\\src\\SmartLink"
+      dockerfile: "AgentOPCUA/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/AgentOPCUA.dll"
+    environment:
+      DOTNET_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "smartlink_agentopcua:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\uller\\.nuget\\packages:/home/app/.nuget/packages"
+    - "D:\\repos\\projects\\OT-SmartLink\\src\\SmartLink\\AgentOPCUA:/app:rw"
+    - "D:\\repos\\projects\\OT-SmartLink\\src\\SmartLink:/src:rw"
+    working_dir: "/app"
+  app:
+    build:
+      context: "D:\\repos\\projects\\OT-SmartLink\\src\\SmartLink"
+      dockerfile: "App/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/App.dll"
+    environment:
+      DOTNET_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "smartlink_app:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\uller\\.nuget\\packages:/home/app/.nuget/packages"
+    - "D:\\repos\\projects\\OT-SmartLink\\src\\SmartLink\\App:/app:rw"
+    - "D:\\repos\\projects\\OT-SmartLink\\src\\SmartLink:/src:rw"
+    working_dir: "/app"
+  servicedatastorage:
+    build:
+      context: "D:\\repos\\projects\\OT-SmartLink\\src\\SmartLink"
+      dockerfile: "ServiceDataStorage/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/ServiceDataStorage.dll"
+    environment:
+      DOTNET_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "smartlink_servicedatastorage:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\uller\\.nuget\\packages:/home/app/.nuget/packages"
+    - "D:\\repos\\projects\\OT-SmartLink\\src\\SmartLink\\ServiceDataStorage:/app:rw"
+    - "D:\\repos\\projects\\OT-SmartLink\\src\\SmartLink:/src:rw"
+    working_dir: "/app"
+  servicemonitoring:
+    build:
+      context: "D:\\repos\\projects\\OT-SmartLink\\src\\SmartLink"
+      dockerfile: "ServiceMonitoring/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/ServiceMonitoring.dll"
+    environment:
+      DOTNET_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "smartlink_servicemonitoring:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\uller\\.nuget\\packages:/home/app/.nuget/packages"
+    - "D:\\repos\\projects\\OT-SmartLink\\src\\SmartLink\\ServiceMonitoring:/app:rw"
+    - "D:\\repos\\projects\\OT-SmartLink\\src\\SmartLink:/src:rw"
+    working_dir: "/app"
+  servicesecurity:
+    build:
+      context: "D:\\repos\\projects\\OT-SmartLink\\src\\SmartLink"
+      dockerfile: "ServiceSecurity/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/ServiceSecurity.dll"
+    environment:
+      DOTNET_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "smartlink_servicesecurity:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\uller\\.nuget\\packages:/home/app/.nuget/packages"
+    - "D:\\repos\\projects\\OT-SmartLink\\src\\SmartLink\\ServiceSecurity:/app:rw"
+    - "D:\\repos\\projects\\OT-SmartLink\\src\\SmartLink:/src:rw"
+    working_dir: "/app"
