@@ -1,0 +1,18 @@
+﻿services:
+  opc-ua_workerservice:
+    image: opc-ua_workerservice
+    build:
+      context: .
+      dockerfile: OPC-UA_WorkerService/Dockerfile
+
+  core:
+    image: core
+    build:
+      context: .
+      dockerfile: Core/Dockerfile
+
+  api_service:
+    image: api_service
+    build:
+      context: .
+      dockerfile: API_Service/Dockerfile
