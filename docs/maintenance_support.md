@@ -6,3 +6,5 @@
 ## Support Features
 - **Help Function**: Integrated user help and tooltips.
 - **Documentation**: User manuals available for all features.
+
+[Return to README](../README.md)

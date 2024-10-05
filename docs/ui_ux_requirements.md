@@ -6,3 +6,5 @@
 
 ## Mockups & Wireframes
 - Mockups for the main dashboard, device configuration page, and real-time data visualization.
+
+[Return to README](../README.md)

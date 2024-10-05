@@ -16,8 +16,6 @@ The full project documentation is available in the `docs` folder. You can find t
 - [UI/UX Requirements](docs/ui_ux_requirements.md)
 - [Non-Functional Requirements](docs/non_functional_requirements.md)
 - [Compatibility Requirements](docs/compatibility_requirements.md)
-- [Acceptance Criteria & Testing](docs/acceptance_criteria_and_testing.md)
-- [Risk Analysis](docs/risk_analysis.md)
 - [Maintenance & Support](docs/maintenance_support.md)
 - [Dependencies & Integrations](docs/dependencies_integrations.md)
 

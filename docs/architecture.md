@@ -10,3 +10,5 @@ The OT-SmartLink application is designed using a microservice architecture, wher
 - **OPC UA/DA Module**: Integrates with industrial devices for data collection.
 - **Data Processor**: Processes and models incoming data using semantic technologies.
 - **UI Module**: User interface for real-time monitoring and configuration.
+
+[Return to README](../README.md)

@@ -10,3 +10,5 @@
     - **Devices**: Stores metadata about connected devices (e.g., ID, type, location).
     - **Users**: Stores user information and role assignments.
     - **Logs**: Stores event logs and system information for auditing purposes.
+
+    [Return to README](../README.md)

@@ -8,3 +8,5 @@
 ## Integrations
 - **SCADA Systems**: Integrates with SCADA for real-time monitoring.
 - **MQTT Brokers**: For IoT communication.
+
+[Return to README](../README.md)

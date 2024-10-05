@@ -15,3 +15,5 @@
 ## Security
 - All communication must be encrypted (e.g., TLS for REST, OPC UA security).
 - Authentication with role-based access control for all users.
+
+[Return to README](../README.md)

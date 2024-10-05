@@ -20,3 +20,5 @@
 ## Modbus
 - **Communication**: Connects to PLCs and industrial devices for data exchange.
 - **Registers**: Mapping of device data to Modbus registers.
+
+[Return to README](../README.md)
